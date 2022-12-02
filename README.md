@@ -23,7 +23,7 @@ Following the original implementation, it consists of 3 steps:
    - use the base model from step2 as model initialization and further fine tune the bbox head with few shot datasets.
 
 
-### An example of DIOR split1 1 shot setting with 2 gpus
+### An example of DIOR split1 10-shot setting with 2 gpus
 
 ```bash
 # step1: base training for voc split1
