@@ -49,3 +49,7 @@ bash ./tools/detection/dist_train.sh \
 
 ## Data preparation
 We have provided  the few-shot annotations in 'data/few_shot_ann'. 
+
+## Base training checkpoint on DIOR dataset
+Split1: https://pan.baidu.com/s/11PcX-ywOiF3bPhFIcZKlUA     
+        code：ouhu
