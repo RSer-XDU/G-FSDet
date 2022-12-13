@@ -38,7 +38,7 @@ python -m tools.detection.misc.initialize_bbox_head \
 
 # step3: few shot fine-tuning
 bash ./tools/detection/dist_train.sh \
-    configs/detection/ETF/dior/split1/ETF_r101_fpn_dior-split1_10shot-fine-tuning.py 8
+    configs/detection/ETF/dior/split1/ETF_r101_fpn_dior-split1_10shot-fine-tuning.py 2
 ```
 
 **Note**:
