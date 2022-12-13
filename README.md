@@ -1,9 +1,9 @@
 # Generalized Few-Shot Object Detection in Remote Sensing Images
 This is the code for "Generalized Few-Shot Object Detection in Remote Sensing Images"
 
-![](imgs/overall.png)
+![](imgs/overall.jpg)
 
-This code is based on [MMFewshow](https://github.com/open-mmlab/mmfewshot), you can see the mmfew for more detail about the instructions.
+This code is based on [MMFewshot](https://github.com/open-mmlab/mmfewshot), you can see the mmfew for more detail about the instructions.
 
 
 
