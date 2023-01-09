@@ -6,12 +6,12 @@ _base_ = [
 ]
 # classes splits are predefined in FewShotVOCDataset
 data = dict(
-    train=dict(classes='BASE_CLASSES_SPLIT2'),
-    val=dict(classes='BASE_CLASSES_SPLIT2'),
-    test=dict(classes='BASE_CLASSES_SPLIT2'))
+    train=dict(classes='BASE_CLASSES_SPLIT1'),
+    val=dict(classes='BASE_CLASSES_SPLIT1'),
+    test=dict(classes='BASE_CLASSES_SPLIT1'))
 evaluation = dict(
     interval=36000,
-    class_splits=['BASE_CLASSES_SPLIT2', 'NOVEL_CLASSES_SPLIT2'])
+    class_splits=['BASE_CLASSES_SPLIT1', 'NOVEL_CLASSES_SPLIT1'])
 optimizer = dict(
     type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
 lr_config = dict(warmup_iters=200, step=[24000, 32000])
