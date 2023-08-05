@@ -36,11 +36,20 @@ python -m tools.detection.misc.initialize_bbox_head \
     --method randinit \
     --save-dir work_dirs/ETF_r101_fpn_voc-split1_base-training
 
-# step3: few shot fine-tuning
+# step3(Model ETF): few shot fine-tuning
 bash ./tools/detection/dist_train.sh \
     configs/detection/ETF/dior/split1/ETF_r101_fpn_dior-split1_10shot-fine-tuning.py 2
-```
 
+
+# step3(Model ETF+Dis): few shot fine-tuning
+bash ./tools/detection/dist_train.sh \
+    configs/detection/dis_loss/dior/split1/power4_dis_tfa_r101_fpn_dior-split1_3shot-fine-tuning.py 2
+
+
+# step3(Model G-FSDet): few shot fine-tuning
+bash ./tools/detection/dist_train.sh \
+    configs/detection/GFSDet/dior/split1/power4_0.025_weight_0.5_alpha_tfa_r101_fpn_dior-split1_3shot-fine-tuning.py 2
+```
 **Note**:
 - The default output path of the reshaped base model in step2 is set to `work_dirs/{BASE TRAINING CONFIG}/base_model_random_init_bbox_head.pth`.
   When the model is saved to different path, please update the argument `load_from` in step3 few shot fine-tune configs instead
